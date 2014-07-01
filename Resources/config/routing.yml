@@ -1,0 +1,9 @@
+ctblog_post_index:
+    path: /
+    defaults:
+        _controller: CelciusTechBlogBundle:Post:index
+
+ctblog_post_show:
+    path: /{slug}
+    defaults:
+        _controller: CelciusTechBlogBundle:Post:show

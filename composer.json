@@ -1,0 +1,37 @@
+{
+    "name" : "celciustech/blog-bundle",
+    "description" : "Blog Bundle",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Welly",
+        "email" : "welly@celciustech.net"
+    }],
+    "keywords" : [
+        "Blog"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+        "php": ">=5.3.3",
+        "symfony/symfony": "~2.3",
+        "sensio/framework-extra-bundle": "~3.0",
+        "stof/doctrine-extensions-bundle": "dev-master",
+        "egeloen/ckeditor-bundle": "dev-master",
+        "helios-ag/fm-elfinder-bundle": "dev-master",
+        "celciustech/core-bundle": "dev-master"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "CelciusTech\\BlogBundle" : ""
+        }
+    },
+    "target-dir" : "CelciusTech/BlogBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+        "branch-alias" : {
+            "dev-master" : "v1.0.0"
+        }
+    }
+}

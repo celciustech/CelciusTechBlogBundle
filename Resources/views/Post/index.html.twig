@@ -1,0 +1,7 @@
+{% extends 'CelciusTechBlogBundle::layout.html.twig' %}
+
+{% block blog_content %}
+  {% for post in paginator %}
+    <h1>{{ post.title }}</h1>
+  {% endfor %}
+{% endblock %}
