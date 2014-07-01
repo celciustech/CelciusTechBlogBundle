@@ -23,7 +23,7 @@ class PostController extends Controller
 
     /**
      * Extra\Template
-     * @Extra\ParamConverter("post", class="CelciusTechCoreBundle")
+     * @Extra\ParamConverter("post", class="CelciusTechBlogBundle:Post")
      */
     public function showAction(Post $post)
     {
