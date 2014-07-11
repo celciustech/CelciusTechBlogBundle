@@ -17,7 +17,7 @@
         "symfony/symfony": "~2.3",
         "sensio/framework-extra-bundle": "~3.0",
         "stof/doctrine-extensions-bundle": "dev-master",
-        "egeloen/ckeditor-bundle": "dev-master",
+        "egeloen/ckeditor-bundle": "2.3.*",
         "helios-ag/fm-elfinder-bundle": "dev-master",
         "celciustech/core-bundle": "dev-master"
     },
