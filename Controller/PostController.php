@@ -27,8 +27,14 @@ class PostController extends Controller
      */
     public function showAction(Post $post)
     {
+        $postRepository = $this->getRepository('CelciusTechBlogBundle:Post');
+        $prev = $postRepository->findPrevPost($post);
+        $next = $postRepository->findNextPost($post);
+
         return array(
-            'post' => $post
+          'post' => $post,
+          'prev' => $prev,
+          'next' => $next
         );
     }
 }
