@@ -1,6 +1,6 @@
 services:
     ct.twig.blog_extension:
-    class: CelciusTech\BlogBundle\Twig\Extension\CelciusTechBlogExtension
-    arguments: [@service_container]
-    tags:
-        - { name: twig.extension }
+        class: CelciusTech\BlogBundle\Twig\Extension\CelciusTechBlogExtension
+        arguments: [@service_container]
+        tags:
+            - { name: twig.extension }

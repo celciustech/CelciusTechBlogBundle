@@ -1,6 +1,6 @@
 <?php
 
-namespace CelciusTech\BlogBundle\Twig;
+namespace CelciusTech\BlogBundle\Twig\Extension;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -12,7 +12,7 @@ class CelciusTechBlogExtension extends \Twig_Extension
     public function __construct(ContainerInterface $container)
     {
         $this->container = $container;
-        $em = $container->get('doctrine.orm.default_entity_manager');
+        $this->em = $container->get('doctrine.orm.default_entity_manager');
     }
 
     public function getFunctions()
@@ -31,5 +31,10 @@ class CelciusTechBlogExtension extends \Twig_Extension
         );
 
         return $posts;
+    }
+
+    public function getName()
+    {
+        return 'ctblog_extension';
     }
 }
